@@ -11,12 +11,15 @@
      La primera foto de la lista es la grande.
 
   Campos:
-    grupo     -> "investigacion" o "proyectos" (sección donde aparece)
+    grupo     -> "investigacion", "colaboraciones" o "proyectos" (sección donde aparece)
     titulo    -> nombre del proyecto
     anio      -> año o rango, por ejemplo "2026" o "2021–hoy"
     rol       -> qué hiciste tú
     contexto  -> cliente, artista, institución o concurso
     tecnicas  -> herramientas y materiales
+    autoria   -> (opcional) solo si la obra es de otra persona, por ejemplo "Obra de la artista Carolina Pino".
+                 Al ponerlo, el proyecto muestra la etiqueta "Colaboración".
+    equipo    -> (opcional) quiénes trabajaron contigo, por ejemplo "Alejandro Casas y Emilio Troncoso"
     desc      -> uno o más párrafos, cada uno entre comillas y separados por coma
     imgs      -> nombres de las fotos en img/ (deben ser .jpg)
 
@@ -33,16 +36,28 @@ const PROYECTOS = [
     rol:"Concepto, desarrollo de aplicación y fabricación", contexto:"Relacional.lab", tecnicas:"App táctil, Grasshopper, impresión 3D, tallado CNC",
     desc:["Proyecto de diseño especulativo para compartir sensaciones táctiles a distancia. Una aplicación capta las interacciones de los dedos sobre una pantalla y las convierte en superficies que se fabrican como objetos: vasos, bandejas, placas.","Busca sumar el tacto a la comunicación remota y abrir nuevas formas de conexión emocional."],
     imgs:["texturas-1","texturas-5","texturas-4","texturas-3","texturas-2"] },
-  { grupo:"proyectos", titulo:"Murmuraciones, escultura viva para Hualpén", anio:"2025",
-    rol:"Integrante de equipo y proceso creativo , sistemas de fabricación digital para Artista Carolina Pino", contexto:"Concurso MOP, Arte en puente industrial, Hualpén. Artista Carolina Pino", tecnicas:"Datos de cantos de aves, modelado paramétrico, fierro negro, realidad aumentada",
-    desc:["Escultura de fierro negro que representa una bandada de aves en movimiento, generada a partir de datos del canto del cernícalo americano, la cigüeñuela y la gaviota dominicana.","Una experiencia de realidad aumentada proyecta las aves en vuelo hacia la desembocadura al recorrer la obra con un teléfono."],
+  { grupo:"investigacion", titulo:"Exoport", anio:"2018",
+    rol:"Integrante del equipo de fabricación", contexto:"Diplomado en Diseño, Innovación y Tecnología, Universidad Adolfo Ibáñez",
+    equipo:"Francisca Lema, Sebastián Silva, Atahualpa Carrero y Emilio Troncoso", tecnicas:"Arduino, sensor de fuerza, corte por chorro de agua en aluminio, mecanizado CNC, termoformado, impresión 3D",
+    desc:["Prototipo de brazo robótico vestible para empresas cuyos trabajadores manipulan cargas sobre los 25 kg, el límite que fija la Ley del Saco.","Un sensor de fuerza en el guante registra el peso y tres placas Arduino controlan la asistencia del brazo. La estructura combina aluminio cortado por chorro de agua con piezas mecanizadas en CNC, termoformadas e impresas en 3D."],
+    imgs:["exoport-1","exoport-2","exoport-3","exoport-4","exoport-5"] },
+  { grupo:"colaboraciones", titulo:"Umbral", anio:"2026",
+    rol:"Procesos creativos y fabricación", contexto:"Concurso de arte, Aeropuerto Internacional Arturo Merino Benítez, Santiago",
+    autoria:"Obra de la artista Carolina Pino", equipo:"Alejandro Casas y Emilio Troncoso", tecnicas:"Diseño digital, modelado 3D, planimetría",
+    desc:["Propuesta escultórica para el concurso del Aeropuerto de Santiago, desarrollada como parte del equipo de la artista Carolina Pino junto a Alejandro Casas.","La obra propone pensar el viaje no solo como un trayecto, sino como una transformación del cuerpo, el tiempo y el espacio. Umbral representa el tránsito entre dos mundos."],
+    imgs:["umbral-1","umbral-2","umbral-3","umbral-4"] },
+  { grupo:"colaboraciones", titulo:"Murmuraciones, escultura viva para Hualpén", anio:"2025",
+    rol:"Proceso creativo y sistemas de fabricación digital", contexto:"Concurso MOP, Arte en puente industrial, Hualpén",
+    autoria:"Obra de la artista Carolina Pino", equipo:"Alejandro Casas y Emilio Troncoso", tecnicas:"Datos de cantos de aves, modelado paramétrico, fierro negro, realidad aumentada",
+    desc:["Proyecto en colaboración para la artista Carolina Pino, desarrollado en equipo con Alejandro Casas. Participé en el proceso creativo y estuve a cargo de los sistemas de fabricación digital.","La obra es una escultura de fierro negro que representa una bandada de aves en movimiento, generada a partir de datos del canto del cernícalo americano, la cigüeñuela y la gaviota dominicana.","Una experiencia de realidad aumentada proyecta las aves en vuelo hacia la desembocadura al recorrer la obra con un teléfono."],
     imgs:["murmuraciones-1","murmuraciones-2","murmuraciones-4","murmuraciones-3","murmuraciones-5","murmuraciones-6"] },
   { grupo:"proyectos", titulo:"Muro paramétrico IDE Technologies", anio:"2024",
     rol:"Desarrollo digital y planimetría de fabricación", contexto:"Oficinas IDE Technologies, para Stein Arquitectos", tecnicas:"Grasshopper, corte láser, 150 piezas de acrílico",
-    desc:["Desarrollo digital y planimetría para la fabricación de muro parametrico basado en la olas del mar chileno, mediante corte láser de 150 piezas de acrílico que forman el muro interior de las oficinas de IDE Technologies."],
+    desc:["Desarrollo digital y planimetría para la fabricación mediante corte láser de 150 piezas de acrílico que forman el muro interior de las oficinas de IDE Technologies."],
     imgs:["ide-1","ide-2","ide-3","ide-4","ide-5"] },
-  { grupo:"proyectos", titulo:"Gabriel Épica, exploración material", anio:"2025",
-    rol:"Impresión 3D para cera perdida", contexto:"Microescultura de la artista Carolina Pino", tecnicas:"Impresión 3D de resina, fundición en bronce",
+  { grupo:"colaboraciones", titulo:"Gabriel Épica, exploración material", anio:"2025",
+    rol:"Impresión 3D para cera perdida", contexto:"Microescultura Gabriel Épica",
+    autoria:"Obra de la artista Carolina Pino", tecnicas:"Impresión 3D de resina, fundición en bronce",
     desc:["Exploración de impresión 3D de resina para el proceso de cera perdida en bronce de las piezas de microescultura Gabriel Épica."],
     imgs:["gabriel-1","gabriel-2","gabriel-3","gabriel-4"] },
   { grupo:"proyectos", titulo:"Stand CMPC, Semana de la Madera", anio:"2019",

@@ -1,6 +1,6 @@
 <title>Emilio Troncoso</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Portafolio de Emilio Troncoso: diseño, fabricación digital y objetos relacionales.">
+<meta name="description" content="Portafolio de Emilio Troncoso, diseñador en diseño computacional, fabricación digital e interfaces tangibles.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -36,7 +36,7 @@ nav a:hover{color:var(--ink)}
 
 /* Portada */
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:48px;align-items:end;padding-block:64px 56px}
-.hero h1{font-family:var(--f-display);font-weight:700;font-size:clamp(2.6rem,7vw,5.6rem);line-height:.95;letter-spacing:-.03em;margin:0 0 24px;text-wrap:balance}
+.hero h1{font-family:var(--f-display);font-weight:700;font-size:clamp(2.1rem,5vw,4.2rem);line-height:1;letter-spacing:-.03em;margin:0 0 24px;text-wrap:balance}
 .hero .lede{font-size:1.15rem;max-width:34ch;margin:0 0 20px}
 .hero .bio{color:var(--muted);max-width:60ch;margin:0}
 .hero figure{margin:0}
@@ -61,6 +61,7 @@ section.block>.wrap{padding-block:56px}
 .spec dt{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
 .spec dd{margin:2px 0 0;font-size:.92rem}
 .year{font-family:var(--f-mono);font-size:.85rem;color:var(--accent)}
+.tag{display:inline-block;margin-left:8px;padding:1px 7px;border:1px solid var(--line);border-radius:2px;color:var(--muted);font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;vertical-align:1px}
 .project h3{font-family:var(--f-display);font-weight:700;font-size:clamp(1.5rem,3vw,2rem);line-height:1.1;letter-spacing:-.015em;margin:0 0 14px;text-wrap:balance}
 .project .desc{max-width:65ch;margin:0 0 24px}
 .project .desc p{margin:0 0 10px}
@@ -118,6 +119,7 @@ dialog button{font:500 .75rem var(--f-mono);text-transform:uppercase;letter-spac
     <a class="brand" href="#inicio">Emilio Troncoso <span class="dot" aria-hidden="true"></span></a>
     <nav aria-label="Secciones"><ul>
       <li><a href="#investigacion">Investigación</a></li>
+      <li><a href="#colaboraciones">Colaboraciones</a></li>
       <li><a href="#proyectos">Proyectos</a></li>
       <li><a href="#docencia">Docencia</a></li>
       <li><a href="#contacto">Contacto</a></li>
@@ -130,7 +132,7 @@ dialog button{font:500 .75rem var(--f-mono);text-transform:uppercase;letter-spac
     <div class="wrap">
       <div>
         <p class="mono" style="color:var(--muted);margin:0 0 18px">Diseñador · Magíster en Ciencias del Diseño</p>
-        <h1>Diseño, fabricación digital y objetos que nos acercan.</h1>
+        <h1>Diseño computacional, fabricación digital e interfaces tangibles.</h1>
         <p class="lede">Prototipos, interfaces experimentales y sistemas de fabricación para diseño, arquitectura y arte.</p>
         <p class="bio">Diseñador de la Universidad Mayor y Magíster en Ciencias del Diseño de la Universidad Adolfo Ibáñez. Docente adjunto de Fabricación Digital y Diseño Basado en Datos en la Escuela de Diseño UDP. Cofundó ModoCNC, donde dirigió durante diez años la fabricación CNC, láser e impresión 3D de proyectos para estudios, artistas e industria. Hoy dirige Sambla y Relacional.lab, donde investiga el cruce entre diseño, emociones y tecnología.</p>
         <div class="facts mono">
@@ -149,10 +151,20 @@ dialog button{font:500 .75rem var(--f-mono);text-transform:uppercase;letter-spac
   <section class="block" id="investigacion">
     <div class="wrap">
       <div class="sec-head">
-        <h2>Investigación</h2>
+        <h2>Investigación proyectual</h2>
         <p>Objetos Relacionales: piezas físicas que transmiten gestos, tacto y presencia entre personas que están lejos.</p>
       </div>
       <div data-group="investigacion"></div>
+    </div>
+  </section>
+
+  <section class="block" id="colaboraciones">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Colaboraciones</h2>
+        <p>Obras de otros autores en las que participé como parte del equipo. Cada ficha indica la autoría, el equipo y mi rol.</p>
+      </div>
+      <div data-group="colaboraciones"></div>
     </div>
   </section>
 
@@ -176,12 +188,12 @@ dialog button{font:500 .75rem var(--f-mono);text-transform:uppercase;letter-spac
         <article class="course">
           <span class="mono year">2026</span>
           <h3>Fabricación Digital</h3>
-          <p>Del modelo digital a la pieza física: corte láser, router CNC e impresión 3D, con foco en estrategias de fabricación y prototipado.</p>
+          <p>Con foco en CAD/CAM mediante Rhinoceros: del modelo digital a la pieza física con corte láser, router CNC e impresión 3D, y en las estrategias de fabricación y prototipado.</p>
         </article>
         <article class="course">
           <span class="mono year">2026</span>
           <h3>Diseño Basado en Datos</h3>
-          <p>Captura, procesamiento y traducción de datos a forma mediante Grasshopper, Python y fabricación digital.</p>
+          <p>Captura, procesamiento y traducción de datos estáticos y dinámicos a forma mediante Grasshopper y fabricación digital.</p>
         </article>
         <div style="grid-column:1/-1">
           <p class="mono" style="color:var(--muted);margin:16px 0 4px">Talleres y capacitaciones</p>
@@ -233,9 +245,11 @@ PROYECTOS.forEach(p=>{
   const host=document.querySelector(`[data-group="${p.grupo}"]`); if(!host) return;
   const art=el("article",{class:"project"});
   art.innerHTML=`<aside class="spec">
-      <span class="year">${esc(p.anio)}</span>
+      <span class="year">${esc(p.anio)}${p.autoria?` <span class="tag">Colaboración</span>`:""}</span>
       <dl>
         <div><dt>Rol</dt><dd>${esc(p.rol)}</dd></div>
+        ${p.autoria?`<div><dt>Autoría</dt><dd>${esc(p.autoria)}</dd></div>`:""}
+        ${p.equipo?`<div><dt>Equipo</dt><dd>${esc(p.equipo)}</dd></div>`:""}
         <div><dt>Contexto</dt><dd>${esc(p.contexto)}</dd></div>
         <div><dt>Técnicas</dt><dd>${esc(p.tecnicas)}</dd></div>
       </dl>
