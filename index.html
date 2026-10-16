@@ -63,12 +63,12 @@ section.block>.wrap{padding-block:56px}
 .spec{display:grid;gap:14px;align-content:start;position:sticky;top:calc(env(safe-area-inset-top, 0px) + 80px)}
 .spec dl{margin:0;display:grid;gap:10px}
 .spec dt{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
-.spec dd{margin:2px 0 0;font-size:.92rem}
+.spec dd{margin:2px 0 0;font-size:.8rem;line-height:1.45;color:var(--ink)}
 .year{font-family:var(--f-mono);font-size:.85rem;color:var(--accent)}
 .tag{display:inline-block;margin-left:8px;padding:1px 7px;border:1px solid var(--line);border-radius:2px;color:var(--muted);font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;vertical-align:1px}
 .project h3{font-family:var(--f-display);font-weight:700;font-size:clamp(1.5rem,3vw,2rem);line-height:1.1;letter-spacing:-.015em;margin:0 0 14px;text-wrap:balance}
-.project .desc{max-width:65ch;margin:0 0 24px}
-.project .desc p{margin:0 0 10px}
+.project .desc{max-width:none;margin:0 0 24px}
+.project .desc p{margin:0 0 10px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 .gallery{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
 .gallery button{all:unset;cursor:zoom-in;display:block;overflow:hidden;background:var(--surface);border-radius:2px;grid-column:span 2;aspect-ratio:4/3}
 .gallery button:first-child{grid-column:span 6;aspect-ratio:16/9}
@@ -166,7 +166,7 @@ dialog button{font:500 .75rem var(--f-mono);text-transform:uppercase;letter-spac
     <div class="wrap">
       <div class="sec-head">
         <h2>Investigación proyectual</h2>
-        <p>Objetos Relacionales: piezas físicas que transmiten gestos, tacto y presencia entre personas que están en lejania.</p>
+        <p>Objetos Relacionales: piezas físicas que transmiten gestos, tacto y presencia entre personas que se encuentran a distancia.</p>
       </div>
       <div data-group="investigacion"></div>
     </div>
