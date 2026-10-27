@@ -51,7 +51,7 @@ const PROYECTOS = [
   /* ---------- COLABORACIONES ---------- */
   { grupo:"colaboraciones", titulo:"Umbral", anio:"2026",
     rol:"Procesos creativos y fabricación", contexto:"Concurso de arte, Aeropuerto Internacional Arturo Merino Benítez, Santiago",
-    autoria:"Obra de la artista Carolina Pino", equipo:"Alejandro Casas y Emilio Troncoso", tecnicas:"Diseño digital, modelado 3D, planimetría",
+    autoria:"Obra de la artista Carolina Pino", equipo:"Alejandro Casas y Emilio Troncoso", tecnicas:"Diseño digital, modelado 3D y sistemas de fabricación",
     desc:["Propuesta escultórica para el concurso del Aeropuerto de Santiago, desarrollada como parte del equipo de la artista Carolina Pino junto a Alejandro Casas.","La obra propone pensar el viaje no solo como un trayecto, sino como una transformación del cuerpo, el tiempo y el espacio. Umbral representa el tránsito entre dos mundos."],
     imgs:["umbral-1","umbral-2","umbral-3","umbral-4"] },
   { grupo:"colaboraciones", titulo:"Murmuraciones, escultura viva para Hualpén", anio:"2025",
@@ -62,7 +62,7 @@ const PROYECTOS = [
   { grupo:"colaboraciones", titulo:"Gabriel Épica, exploración material", anio:"2025",
     rol:"Impresión 3D para cera perdida", contexto:"Microescultura Gabriel Épica",
     autoria:"Obra de la artista Carolina Pino", tecnicas:"Impresión 3D de resina, fundición en bronce",
-    desc:["Exploración de impresión 3D de resina para el proceso de cera perdida en bronce de las piezas de microescultura Gabriel Épica."],
+    desc:["Exploración de impresión 3D de resina para el proceso de cera perdida en bronce de las piezas de microescultura Gabriel Épica de Carolina Pino."],
     imgs:["gabriel-1","gabriel-2","gabriel-3","gabriel-4"] },
 
   /* ---------- PROYECTOS (del más reciente al más antiguo) ---------- */
